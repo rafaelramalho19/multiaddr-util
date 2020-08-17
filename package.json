@@ -1,0 +1,32 @@
+{
+  "name": "multiaddr-util",
+  "version": "1.0.0",
+  "description": "Util website to convert multiaddr -> uri and vice-versa",
+  "main": "index.js",
+  "dependencies": {
+    "multiaddr-to-uri": "^6.0.0",
+    "parcel": "^1.12.4",
+    "uri-to-multiaddr": "^4.0.0",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "eslint": "^7.7.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelramalho19/multiaddr-util.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelramalho19/multiaddr-util/issues"
+  },
+  "homepage": "https://github.com/rafaelramalho19/multiaddr-util#readme"
+}
