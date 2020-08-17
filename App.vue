@@ -25,12 +25,16 @@ export default {
   },
   data: () => ({ multi: '', uri: '', multiTooltip: null, uriTooltip: null}),
   methods: {
-    onMultiAddrInput(ev) {
+    clearTooltips() {
       this.multiTooltip = null;
+      this.uriTooltip = null;
+    },
+    onMultiAddrInput(ev) {
+      this.clearTooltips()
 
       try {
         const uriResult = multiToUri(this.multi)
-        this.multiTooltip = null;
+        this.clearTooltips()
 
         this.uri = uriResult
       }
@@ -40,11 +44,11 @@ export default {
       }
     },
     onUriAddrInput() {
-      this.uriTooltip = null;
+      this.clearTooltips()
 
       try {
         const multiResult = uriToMulti(this.uri)
-        this.uriTooltip = null;
+        this.clearTooltips()
 
         this.multi = multiResult
       }
